@@ -1,8 +1,13 @@
+*{
+    box-sizing: border-box;
+}
 body{
     display:flex;
     flex-direction: column;
     margin:0px;
     padding:0px;
+    flex-wrap: wrap;
+    
    
 }
 header{
@@ -14,7 +19,8 @@ header{
     background-size:cover;
     color:white;
 background-position: center;
-height:vh;
+height:100vh;
+
 }
 header .logo-nav img{
     flex-shrink:0;
@@ -38,7 +44,7 @@ a{
 display:flex;
 margin-left:10vw;
 margin-right:10vw;
-
+/*flex-wrap:wrap;*/
 }
 .nav-bar{
     display:flex;
@@ -46,21 +52,24 @@ margin-right:10vw;
 }
 .about{
     display:flex;
-    margin-top:130px;
+    /*margin-top:130px;*/
     /*background-color:black;*/
     color:white;
-    margin-left:auto;
-    margin-right: auto;
+    margin:auto;
+    flex-wrap: wrap;
+    width:80vw;
+    justify-content: center;
 }
 .about-info{
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100vw;
-    row-gap: 40px;
-    
+    row-gap: 10px;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 300px;
+    
+   
     flex-wrap:wrap;
     
 }
@@ -78,8 +87,9 @@ margin-right:10vw;
 
 }
  button{
+    /* position: relative;*/
     border:2px solid white;
-    background-color:transparent;
+    background:black;
     color:white;
     height:50px;
     width:200px;
@@ -87,8 +97,20 @@ margin-right:10vw;
     font-weight:600;
     border-radius: 10px;
     cursor: pointer;
-    margin-top:10px;
+   /* margin-top:10px;
+   mix-blend-mode: screen;*/
 }
+/*button::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    border-radius: 0.3em;
+    content: '';
+    mix-blend-mode: color-burn;
+  }*/
 .about-info button{
     margin-bottom:100px;
 }
@@ -105,9 +127,10 @@ margin-right:10vw;
     
     display:flex;
     background:black;
-    max-width: 100vw;
+    
     height:vh;
     flex-direction: column;
+    align-items: center;
     
 }
 .cards-wrapper{
@@ -119,6 +142,7 @@ margin-right:10vw;
    
     justify-content: space-around;
     flex:1;
+    width:80vw;
 }
 .cards-wrapper .image-n-desc{
     
@@ -143,6 +167,7 @@ a p{
     margin-bottom:100px;
     align-items: center;
     margin-top: 100px;
+    width:80vw;
 }
 .quotes-n-action .quotes,.action{
     display:flex;
@@ -150,7 +175,7 @@ a p{
     max-width: 60vw;
     margin-left:20vw;
     margin-right:20vw;
-    align-self: flex-start;
+    
     row-gap: 10px;
 
 }
@@ -194,4 +219,30 @@ a p{
 footer{
     background-color: #444444;
     text-align: center;
+    max-width: vw;
+}
+@media only screen and (max-width:1050px){
+    header{
+        background-color: black;
+        background-image: none;
+        height:auto;
+        /*margin: 100px auto;*/
+        
+    }
+.logo-nav{
+    margin-left: 20px;
+    margin-right:20px;
+}
+ul{
+    flex-grow:0;
+    flex-wrap: wrap;
+}
+.about{
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.cards-wrapper{
+    margin-top:0px;
+}
+    
 }

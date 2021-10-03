@@ -229,6 +229,7 @@ footer{
         /*margin: 100px auto;*/
         
     }
+
 .logo-nav{
     margin-left: 20px;
     margin-right:20px;
@@ -245,4 +246,48 @@ ul{
     margin-top:0px;
 }
     
+
+.about-info h1{
+    /*margin-block-start:5px;
+    margin-block-end: 10px;*/
+    font-weight: 600;
+    font-size:30px;
+}
+.about-info p{
+    /*margin-block-start:10px;
+    margin-block-end: 10px;*/
+    font-weight: 300;
+    font-size:16px;
+
+}
+.about-info{
+    row-gap: 50px;
+}
+.quotes p{
+    
+   /* margin-block-start: 0px;
+    margin-block-end: 0px;*/
+    font-size:25px;
+    font-weight: 500;
+}
+#rightindent{
+    text-align: right;
+    font-size:18px;
+    font-weight: 600;
+}
+button{
+   
+    border:2px solid white;
+    background:black;
+    color:white;
+    height:30px;
+    width:120px;
+    font-size:15px;
+    font-weight:400;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+
+
 }
